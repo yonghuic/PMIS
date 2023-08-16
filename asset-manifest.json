@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/PMIS/static/css/main.dd436e75.css",
+    "main.js": "/PMIS/static/js/main.eb204d22.js",
+    "static/media/nishiki-teki-2.ttf": "/PMIS/static/media/nishiki-teki-2.283e0b9442a0338edc91.ttf",
+    "static/media/benefit.png": "/PMIS/static/media/benefit.d4e000ea2958f2f26d84.png",
+    "static/media/origin.png": "/PMIS/static/media/origin.c16667d4be3f7cd66bda.png",
+    "static/media/overview3.png": "/PMIS/static/media/overview3.cdf87e997576ea134f33.png",
+    "static/media/content4.png": "/PMIS/static/media/content4.79b125ec5f8273015dad.png",
+    "static/media/work1.PNG": "/PMIS/static/media/work1.97f80661414b0830a5a2.PNG",
+    "static/media/work2.PNG": "/PMIS/static/media/work2.6c0b598f5e9794d55263.PNG",
+    "static/media/work3.PNG": "/PMIS/static/media/work3.91ad895f6478a23c2ec2.PNG",
+    "static/media/work4.PNG": "/PMIS/static/media/work4.ad6de22c11a438c0c31d.PNG",
+    "static/media/overview1.png": "/PMIS/static/media/overview1.0bdc6d09e626c950462f.png",
+    "static/media/content3.png": "/PMIS/static/media/content3.fa9f10c731f55d92efc3.png",
+    "static/media/content5.png": "/PMIS/static/media/content5.fb9016d205828883ad73.png",
+    "static/media/content2.png": "/PMIS/static/media/content2.54e44fb424b3d0a4f9b6.png",
+    "static/media/overview2.png": "/PMIS/static/media/overview2.794a4e65042fd34d22fb.png",
+    "static/media/content1.png": "/PMIS/static/media/content1.730cd5ca5a589d217ff2.png",
+    "static/media/content6.png": "/PMIS/static/media/content6.cc715283b7804ce07f92.png",
+    "static/media/logo.png": "/PMIS/static/media/logo.5a867f36c40f64953081.png",
+    "static/media/v3.png": "/PMIS/static/media/v3.ec9fa7af71c8ed0dc4aa.png",
+    "static/media/worker2.png": "/PMIS/static/media/worker2.7c006b36a9ed7160d43a.png",
+    "static/media/worker1.png": "/PMIS/static/media/worker1.992989007955cc43c67d.png",
+    "static/media/circle2.png": "/PMIS/static/media/circle2.a2cea8580cea8dc8a70f.png",
+    "static/media/circle3.png": "/PMIS/static/media/circle3.8f225eaebeeb406eff2c.png",
+    "static/media/v1.png": "/PMIS/static/media/v1.a0896a78eb45a8f543d1.png",
+    "static/media/worker3.png": "/PMIS/static/media/worker3.19f6d4966c5074b0a45c.png",
+    "static/media/barrier.png": "/PMIS/static/media/barrier.f1d2cba6ba9306c16a70.png",
+    "static/media/circle1.png": "/PMIS/static/media/circle1.5b678932b766e18990db.png",
+    "index.html": "/PMIS/index.html",
+    "main.dd436e75.css.map": "/PMIS/static/css/main.dd436e75.css.map",
+    "main.eb204d22.js.map": "/PMIS/static/js/main.eb204d22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd436e75.css",
+    "static/js/main.eb204d22.js"
+  ]
+}
