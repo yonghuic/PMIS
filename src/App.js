@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Introduction from './components/Introduction/Introduction';
+import Construction from './components/Construction/Construction';
+import Public from './components/Public/Public';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className='h-screen bg-[#fff8ea]'>
+                <Navbar />
+                <Routes>
+                    <Route path='/' element={<Home />}/>                     {/*首頁*/}
+                    <Route path='/introduction' element={<Introduction />}/> {/*計畫簡介*/}
+                    <Route path='/construction' element={<Construction />}/> {/*施工影像*/}
+                    <Route path='/public' element={<Public />}/>             {/*公開資訊*/}
+                </Routes>
+                <Footer />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

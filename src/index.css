@@ -1,13 +1,232 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+@font-face {
+    font-family: "nishikiteki";
+    src: local("nishiki-teki"),
+        url("./fonts/nishiki-teki-2.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    html {
+        font-family: "Mochiy Pop One", "nishikiteki", "Stick", "Potta One";
+    }
+    
+    li {
+        /*@apply px-4;*/
+        @apply cursor-pointer;
+    }
+}
+
+/*概述css*/
+.carousel {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.carousel_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_card {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.5s ease-in-out;
+}
+  
+.carousel_card-active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+}
+  
+.card_image {
+    height: 100%;
+    width: 100%;
+}
+  
+.carousel_arrow_left, .carousel_arrow_right {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #ffeeb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+  
+.carousel_arrow_left {
+    left: 15px;
+    padding-right: 3px;
+}
+  
+.carousel_arrow_right {
+    right: 15px;
+    padding-left: 3px;
+}
+  
+.carousel_pagination {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+  
+.pagination_dot {
+    height: 10px;
+    width: 10px;
+    background-color: #7d592c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+.pagination_dot:hover {
+    transform: scale(1.2);
+}
+  
+.pagination_dot-active {
+    background-color: rgb(239, 179, 67);
+}
+
+/*內容css*/
+.introductionContent {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.contentContainer {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contentContainer .contentCard {
+    position: relative;
+    width: 315px; 
+    height: 100px; 
+    background: #fef3b9; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 7px 15px -1px rgba(38,38,38,0.75);
+    -webkit-box-shadow: 8px 7px 15px -1px rgba(38,38,38,0.75);
+    -moz-box-shadow: 8px 7px 15px -1px rgba(38,38,38,0.75);
+    transition: 0.4s ease-in-out;
+}
+
+.contentContainer .contentCard:hover {
+    height: 280px; 
+}
+
+.contentContainer .contentCard .contentimg {
+    position: relative;
+    top: -70px;  
+}
+
+.contentContainer .contentCard .contentimg img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.contentContainer .contentCard .contentDetail {
+    font-family: 'Mochiy Pop One';
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.contentContainer .contentCard:hover .contentDetail {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*下載交維資訊檔案按鈕*/
+.downloadFileButton {
+    font-family: "Potta One";
+    position: absolute;
+    /*width: 540px; /*240px*/
+    /*height: 70px; /*60px*/
+    line-height: 60px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #8b7766;
+    background-color: transparent;
+    border: 3px solid #cbae82;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+    overflow: hidden;
+    /*margin-top: 250px;*/
+   /*margin-left: -615px;*/
+    z-index: 1000;
+}
+
+.downloadFileButton::before, .downloadFileButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 120%;
+    height: 100%;
+    transform: skewX(-45deg);
+    z-index: -1;
+}
+
+.downloadFileButton::before {
+    transition: .5s;
+    background-color: #cbae82;
+}
+
+.downloadFileButton::after {
+    transition: .5s;
+    transition-delay: .5s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.downloadFileButton:hover {
+    color: #ffffe4; 
+}
+
+.downloadFileButton:hover::before {
+    left: -10%;
+}
+
+.downloadFileButton:hover::after {
+    left: -70%;
 }
