@@ -95,22 +95,3 @@ const dataProjectProgressChart = {
 }
 
 export default ProjectProgressChart
-/*
-<div classNameNameName="card lg:card-side bg-[#fff8ea] shadow-xl">
-    <div classNameNameName="card-body">
-        <h2 classNameNameName="card-title text-[#54524a] text-2xl font-normal">工程進度</h2>
-        <Line options={optionsProjectProgressChart} data={dataProjectProgressChart} />
-    </div>
-</div>
-
- <div classNameName="w-full md:w-1/2 p-4">
-                <div classNameName="bg-[#fff8ea] rounded-lg shadow-lg">
-                    <div classNameName="p-4">
-                        <h2 classNameName="text-left text-[#54524a] text-2xl">工程進度</h2>
-                        <div classNameName="text-center">
-                            <Line options={optionsProjectProgressChart} data={dataProjectProgressChart} />
-                        </div>
-                    </div>
-                </div>
-            </div>
-*/

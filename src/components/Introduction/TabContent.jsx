@@ -6,7 +6,7 @@ import content5 from "./IntroductionImages/content5.png";
 import content6 from "./IntroductionImages/content6.png";
 
 const TabContent = () => {
-    //卡片內容資料 style={{width:"281px", height:"160px"}} 
+    //卡片內容資料
     const contentdata = [
         {
             image: content1,
@@ -63,8 +63,3 @@ const TabContent = () => {
 }
 
 export default TabContent
-/*
- <div className="contentimg">
-                                    <img src={data.image} alt="content1" className="h-full w-full object-cover rounded-t-lg -mt-5" style={{width:"315px", height:"200px"}}/>
-                                </div>
-*/

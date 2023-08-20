@@ -49,9 +49,7 @@ const Home = () => {
             </div>
         </div>
 
-        {/*Tab 動態圖表內容
-        <div className="mt-5 grid grid-cols-1 gap-10 lg:grid-cols-2">
-        */}
+        {/*Tab 動態圖表內容*/}
         {tabs === 'dynamicChart' && (
             <>
                 <div className="flex flex-wrap justify-center bg-[#fff8ea] space-x-4 space-y-4 pb-4 overflow-hidden">

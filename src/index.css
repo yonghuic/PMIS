@@ -179,8 +179,6 @@
 .downloadFileButton {
     font-family: "Potta One";
     position: absolute;
-    /*width: 540px; /*240px*/
-    /*height: 70px; /*60px*/
     line-height: 60px;
     font-size: 30px;
     text-transform: uppercase;
@@ -192,8 +190,6 @@
     outline: none;
     transition: .5s;
     overflow: hidden;
-    /*margin-top: 250px;*/
-   /*margin-left: -615px;*/
     z-index: 1000;
 }
 
@@ -230,3 +226,21 @@
 .downloadFileButton:hover::after {
     left: -70%;
 }
+
+/* 天氣圖片左右移動的effect */
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* 10px 調整這個值來控制左右移動距離 */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 4s infinite; /* 2s 調整移動時間值越大越慢 */
+  }
+  
